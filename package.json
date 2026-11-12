@@ -1,0 +1,47 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project 3: PhotoSharing with sessions, TanStack Query, and comments",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\"",
+    "server": "nodemon webServer.js",
+    "client": "vite --open --port 3000",
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^5.18.0",
+    "@tanstack/react-query": "^5.107.1",
+    "axios": "^1.20.0",
+    "axios-mock-adapter": "^1.22.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^4.22.3",
+    "express-session": "^1.19.0",
+    "mongoose": "^7.8.12",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^7.18.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "eslint": "^10.13.0",
+    "eslint-plugin-jsx-a11y-x": "^0.2.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^16.5.0",
+    "nodemon": "^3.1.14",
+    "vite": "^8.3.4"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

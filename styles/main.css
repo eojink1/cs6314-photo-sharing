@@ -1,0 +1,10 @@
+/* Global names are prefixed with main- to avoid component collisions. */
+.main-topbar-buffer {
+  height: 64px;
+  width: 100%;
+}
+
+.main-grid-item {
+  min-height: calc(100vh - 96px);
+  padding: 16px;
+}
